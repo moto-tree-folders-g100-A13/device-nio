@@ -34,5 +34,19 @@ TARGET_USES_BLUR := true
 WITH_FOD_ANIMATIONS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
+WITH_GMS := true  # nio flag , specific for build with gapps
 
-PRODUCT_SYSTEM_EXT_PROPERTIES += ro.spark.maintainer=seba3567
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.spark.maintainer=seba_3567
+
+
+ifneq ($(WITH_GMS),true)
+PRODUCT_PACKAGES += \
+	GoogleCam \  #build from vendor google cam when gapps it installer
+
+endif
+
+NO_APERTURE := true  # remove lineage aperture camara
+
+# clean device
+PRODUCT_PACKAGES += \
+	RemovePackageskona
