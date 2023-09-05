@@ -41,5 +41,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
+# clean device
+PRODUCT_PACKAGES += \
+	RemovePackageskona
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/motorola/nio/nio-vendor.mk)

@@ -5,14 +5,9 @@ LOCAL_MODULE := RemovePackageskona
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
-    Seedvault \
-    Jelly \
-    Calendar \
-    ExactCalculator \
-    FM2 \
     Recorder \
-    talkback \
     MusicFX \
+    Camera2 \
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED

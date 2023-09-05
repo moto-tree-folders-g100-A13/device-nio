@@ -36,17 +36,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
 WITH_GMS := true  # nio flag , specific for build with gapps
 
-PRODUCT_SYSTEM_EXT_PROPERTIES += ro.spark.maintainer=seba_3567
-
-
-ifneq ($(WITH_GMS),true)
-PRODUCT_PACKAGES += \
-	GoogleCam \  #build from vendor google cam when gapps it installer
-
-endif
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.spark.maintainer=seba_3567 \
+ro.spark.device.name=Moto G100\
+ro.spark.group.url=https://t.me/foldersBetar \
+ro.spark.maintainer.username=seba3567\
 
 NO_APERTURE := true  # remove lineage aperture camara
-
-# clean device
-PRODUCT_PACKAGES += \
-	RemovePackageskona
