@@ -14,6 +14,8 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 # Inherit from nio device
 $(call inherit-product, device/motorola/nio/device.mk)
 
+#$(call inherit-product, device/motorola/nio/TwrpConfigCommon.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := spark_nio
 PRODUCT_DEVICE := nio
@@ -30,7 +32,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 
-TARGET_USES_BLUR := true
+TARGET_USES_BLUR := false
 WITH_FOD_ANIMATIONS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true

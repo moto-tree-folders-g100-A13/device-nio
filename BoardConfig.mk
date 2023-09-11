@@ -6,6 +6,9 @@
 
 include device/motorola/sm8250-common/BoardConfigCommon.mk
 
+
+#include device/motorola/nio/TwrpConfigCommon.mk
+
 DEVICE_PATH := device/motorola/nio
 
 # Bootloader
@@ -18,7 +21,8 @@ TARGET_SCREEN_DENSITY := 420
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/lineageos_nio_defconfig
+# TARGET_KERNEL_CONFIG := vendor/lineageos_nio_defconfig
+TARGET_KERNEL_CONFIG := vendor/nio_dexk_defconfig
 
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
