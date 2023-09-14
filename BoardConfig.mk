@@ -20,7 +20,7 @@ TARGET_SCREEN_DENSITY := 420
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Kernel
 # TARGET_KERNEL_CONFIG := vendor/lineageos_nio_defconfig
