@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from nio_retcn S1RN32.55-16-2
+# All unpinned blobs below are extracted from nio 12 - user-12-S1RTS32.41-20-16-1-9-a8931-release-keys
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -10,7 +10,7 @@ vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 
-# Camera
+# Camera-nio
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_ov02b1b_otp.so
@@ -146,23 +146,23 @@ vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
-# Camera-configs
+# Camera-configs-nio
 vendor/etc/camera/arcsoft_calibration_u_dc.bin
 vendor/etc/camera/arcsoft_standalone_calibration_u_dc.bin
 vendor/etc/camera/dual_golden_depth.bin
 vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/vidhance_calibration
 
-# Camera (Firmware)
+# Camera-Firmware-nio
 vendor/firmware/CAMERA_ICP.elf
 
-# Display (Calibration Data)
+# Display-calibration-nio
 vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_1080x2520_670.xml
 
-# Thermal
+# Thermal-nio
 vendor/etc/thermal-engine-nio.conf
 
-# Touchscreen firmware
+# Touchscreen-firmware-nio
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6029.csv
