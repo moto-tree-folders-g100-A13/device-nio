@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_nio.mk
+    $(LOCAL_DIR)/lineage_nio.mk
