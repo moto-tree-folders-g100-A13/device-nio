@@ -20,7 +20,7 @@ $(call inherit-product, device/motorola/nio/device.mk)
 PRODUCT_NAME := spark_nio
 PRODUCT_DEVICE := nio
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := XT2125-4
+PRODUCT_MODEL := Moto G100
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_SYSTEM_NAME := nio_retcn
@@ -32,6 +32,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := false
 WITH_FOD_ANIMATIONS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -42,5 +43,3 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += ro.spark.maintainer=seba_3567 \
 ro.spark.device.name=Moto G100\
 ro.spark.group.url=https://t.me/foldersBetar \
 ro.spark.maintainer.username=seba3567\
-
-NO_APERTURE := true  # remove lineage aperture camara
