@@ -166,3 +166,4 @@ vendor/etc/thermal-engine-nio.conf
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6029.csv
+
