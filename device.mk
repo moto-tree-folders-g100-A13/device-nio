@@ -29,14 +29,16 @@ PRODUCT_PACKAGES += \
     init.device.rc \
     init.recovery.device.rc\
 
+# NFC
+#PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service
+
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml
 
-# NFC
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service
-
+# nfc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
