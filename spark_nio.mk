@@ -31,9 +31,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="nio_retcn-user 12 S1RN32.55-16-2 125d6-32b4dd release-keys" \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    vendor/spark/config/device_framework_matrix.xml
-
 
 
 # Inherit some common DerpFest stuff
